@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'papo'`, () => {
+  it(`should have as title 'Angular Material PWA Quickstart'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('papo');
+    expect(app.title).toEqual('Angular Material PWA Quickstart');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to papo!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to Angular Material PWA Quickstart!');
   });
 });
